@@ -3,9 +3,12 @@
 /**
  * Module dependencies.
  */
-
+// Se importa en app la logica del server
+// require importa codigo de otro archivo
 var app = require('../app');
-var debug = require('debug')('projnotes:server');
+//Se importa una dependencia externa
+var debug = require('debug')('projnotes');
+//Modulo que permite la comunicacion con un cliente via el protocolo Http
 var http = require('http');
 
 /**
@@ -13,19 +16,21 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '3000');
+//Store the port info in the app
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+var server = http.createServer(app); //(req, res) => {acciones}
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+//Specifying the port where the server will be listening
 server.listen(port);
+//Attaching callbacks to events
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -86,5 +91,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  //debug('⭐ Listening on ' + bind + '⭐⭐');
+  debug(`⭐⭐ Listening on ${process.env.APP_URL}:${addr.port} ⭐⭐`);
 }
