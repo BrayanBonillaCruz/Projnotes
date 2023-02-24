@@ -12,6 +12,7 @@ var apiRouter = require('./routes/api');
 var app = express();
 
 // view engine setup
+//We are declaring the localization of the views
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
