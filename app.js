@@ -16,10 +16,25 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+//Registrando middlewares
+//Log all received requests
 app.use(logger('dev'));
+// app.use((req, res, next) => {
+//  console.log("🍎 We have received a request");
+//  next();
+//});
+//app.use((req, res,next) => {
+//  console.log(`😷 IP: ${req.ip}`);
+//  console.log(`😷 METHOD: ${req.method}`);
+//  next();
+//});
+//Parse request data into json
 app.use(express.json());
+//Decode url info
 app.use(express.urlencoded({ extended: false }));
+// Parse client cookies info json
 app.use(cookieParser());
+// Set up the static files server
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Registering routes
