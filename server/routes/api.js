@@ -8,7 +8,7 @@ router.get('/author', (req, res)=>{
     res.json({
         "name": "Brayan",
         "lasname": "Bonilla",
-        "twitter": "@Brayan",
+        "twitter": "@BrayanBonilla",
         "job": "CC"
     });
 });  //function(req, res){}
