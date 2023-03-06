@@ -5,17 +5,17 @@
  */
 // Se importa en app la logica del server
 // require importa codigo de otro archivo
-var app = require('../app');
+const app = require('../app');
 //Se importa una dependencia externa
-var debug = require('debug')('projnotes');
+const debug = require('debug')('projnotes');
 //Modulo que permite la comunicacion con un cliente via el protocolo Http
-var http = require('http');
+const http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 //Store the port info in the app
 app.set('port', port);
 
@@ -23,7 +23,7 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app); //(req, res) => {acciones}
+const server = http.createServer(app); //(req, res) => {acciones}
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -39,7 +39,7 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  let port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -63,7 +63,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
+  const bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -87,8 +87,8 @@ function onError(error) {
  */
 
 function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
+  let addr = server.address();
+  let bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   //debug('⭐ Listening on ' + bind + '⭐⭐');

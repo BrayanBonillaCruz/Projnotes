@@ -1,11 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
 let iconSet = ["⭐","🤖","🍉"];
 let icon = iconSet[Math.floor(Math.random() * 3)]
-res.render('index', { title: 'DWPCII-2023A', icon });
+res.render('index', { title: `DWPCII-2023A`,icon });
 });
 
 router.get('/author', (req, res)=>{

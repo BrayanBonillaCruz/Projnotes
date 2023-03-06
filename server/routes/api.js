@@ -1,7 +1,7 @@
 //Importing Express library
-var express = require('express');
+const express = require('express');
 //Creating a Router instance
-var router = express.Router();
+const router = express.Router();
 
 //Creating the route
 router.get('/author', (req, res)=>{
