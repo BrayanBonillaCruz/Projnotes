@@ -5,11 +5,13 @@
  */
 // Se importa en app la logica del server
 // require importa codigo de otro archivo
-const app = require('../app');
+//const app = require('../app');
+import app from '../app';
 //Se importa una dependencia externa
 const debug = require('debug')('projnotes');
 //Modulo que permite la comunicacion con un cliente via el protocolo Http
-const http = require('http');
+//const http = require('http');
+import http from 'http';
 
 /**
  * Get port from environment and store in Express.

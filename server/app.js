@@ -1,13 +1,21 @@
-const createError = require('http-errors');
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+//const createError = require('http-errors');
+import createError from 'http-errors';
+//const express = require('express');
+import express from 'express';
+//const path = require('path');
+import path  from 'path';
+//const cookieParser = require('cookie-parser');
+import cookieParser from 'cookie-parser';
+//const logger = require('morgan');
+import logger from 'morgan';
 
 //Importing subroutes
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const apiRouter = require('./routes/api');
+//const indexRouter = require('./routes/index');
+import indexRouter from './routes/index';
+//const usersRouter = require('./routes/users');
+import usersRouter from './routes/users';
+//const apiRouter = require('./routes/api');
+import apiRouter from './routes/api';
 
 const app = express();
 

@@ -1,5 +1,6 @@
 //Importing Express library
-const express = require('express');
+//const express = require('express');
+import express from "express";
 //Creating a Router instance
 const router = express.Router();
 
