@@ -1,7 +1,7 @@
 //const express = require('express');
 import express from "express";
 //const router = express.Router();
-const {Router} = Router();
+const {Router} = express;
 
 const router = Router();
 
