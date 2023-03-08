@@ -19,3 +19,7 @@ The projec is coded in ES6, as runtime enviroment it uses Node, for the database
 4. [Adding Babel]()
 
 5. [Updating to ES6]()
+
+6. [Build Script]()
+
+7. [Babel plugins]()
