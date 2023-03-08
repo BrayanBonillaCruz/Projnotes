@@ -2,7 +2,10 @@
 //const express = require('express');
 import express from "express";
 //Creating a Router instance
-const router = express.Router();
+//const router = express.Router();
+const {Router} = express;
+
+const router = Router();
 
 //Creating the route
 router.get('/author', (req, res)=>{
@@ -15,4 +18,5 @@ router.get('/author', (req, res)=>{
 });  //function(req, res){}
 
 //Exporting the router
-module.exports = router;
+//module.exports = router;
+export default router;

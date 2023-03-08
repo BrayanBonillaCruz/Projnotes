@@ -1,6 +1,9 @@
 //const express = require('express');
 import express from "express";
-const router = express.Router();
+//const router = express.Router();
+const {Router} = Router();
+
+const router = Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
@@ -21,4 +24,5 @@ router.get('/author', (req, res)=>{
     res.render('author', author);
 })
 
-module.exports = router;
+//module.exports = router;
+export default router;

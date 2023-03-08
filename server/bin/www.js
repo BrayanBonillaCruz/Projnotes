@@ -8,7 +8,10 @@
 //const app = require('../app');
 import app from '../app';
 //Se importa una dependencia externa
-const debug = require('debug')('projnotes');
+//const debug = require('debug')('projnotes');
+import Debug from 'debug';
+
+const debug = Debug('projnotes');
 //Modulo que permite la comunicacion con un cliente via el protocolo Http
 //const http = require('http');
 import http from 'http';
@@ -41,7 +44,7 @@ server.on('listening', onListening);
  */
 
 function normalizePort(val) {
-  let port = parseInt(val, 10);
+  const port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -72,11 +75,11 @@ function onError(error) {
   // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+      console.error(`${bind} requires elevated privileges`);
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+      console.error(`${bind} is already in use`);
       process.exit(1);
       break;
     default:
@@ -89,8 +92,8 @@ function onError(error) {
  */
 
 function onListening() {
-  let addr = server.address();
-  let bind = typeof addr === 'string'
+  const addr = server.address();
+  const bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   //debug('⭐ Listening on ' + bind + '⭐⭐');
