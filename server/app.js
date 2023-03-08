@@ -11,11 +11,11 @@ import logger from 'morgan';
 
 //Importing subroutes
 //const indexRouter = require('./routes/index');
-import indexRouter from './routes/index';
+import indexRouter from '@server/routes/index';
 //const usersRouter = require('./routes/users');
-import usersRouter from './routes/users';
+import usersRouter from '@server/routes/users';
 //const apiRouter = require('./routes/api');
-import apiRouter from './routes/api';
+import apiRouter from '@server/routes/api';
 
 const app = express();
 
