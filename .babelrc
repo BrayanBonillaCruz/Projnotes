@@ -5,6 +5,13 @@
                 // Los targets son las plataformas donde se ejecutara el codigo final
                 "targets" : { "node" : "current"}
             }
+        ],
+        [
+            "minify",{
+                "builtIns" : false,
+                "evaluate" : false,
+                "mangle" : false
+            }
         ]
     ],
     "plugins": [
