@@ -23,3 +23,5 @@ The projec is coded in ES6, as runtime enviroment it uses Node, for the database
 6. [Build Script]()
 
 7. [Babel plugins]()
+
+8. [Adding a bundler]()
