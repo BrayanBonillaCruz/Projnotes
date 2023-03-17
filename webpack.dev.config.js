@@ -1,35 +1,34 @@
 // Important notes
-// 🚨 Configuration file must use ES5 not ES6
-// that's why you will see "requires" not "imports"
-
-// Importing an file routing manager
+// The configuration file must use ES5
+// Importing a file routing manager
 const path = require('path');
 
 // We export a configuration object
 // that will be used by webpack
 module.exports = {
-  // 1. The entry file from which
-  // it will contain all the definitions to package
+  // 1. The entry file or indexer
   entry: "./client/index.js",
   // 2. Specify the output file
-  // Here it is detailed where the file will be
-  // final packaged.
   output: {
     // 2.1 Absolute output path
-    // Note that it is being placed in the directory
-    // of the project's static files
     path: path.resolve(__dirname, "public"),
     // 2.2 Output file name
     filename: "bundle.js"
+  },
+  // 3. Configuring the development server
+  devServer: {
+    // 3.1 Static files folder
+    static: path.join(__dirname, "public"),
+    // 3.2 Development server port
+    port: 8080,
+    // 3.3 Defining the host
+    host: "localhost"
   },
   // Adding a module to webpack
   module: {
     rules: [
       {
-				// This section stablishes 
-				// what rules to apply to ".js" files
         test: /\.js$/,
-				// We Dont want to transpile any kind of modules
         exclude: /(node_modules|bower_components)/,
         use: [
           {
@@ -41,7 +40,7 @@ module.exports = {
                   {
                     'modules': false,
                     'useBuiltIns': 'usage',
-                    'targets': {"chrome": "80"},
+                    'targets': {"chrome": "80"},//'> 0.25%, not dead',
                     'corejs': 3
                   }
                 ]
