@@ -17,7 +17,8 @@ module.exports = {
     // 2.1 Absolute output path
     path: path.resolve(__dirname, "public"),
     // 2.2 Output file name
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: '/'
   },
   // 3. Configuring the development server
   devServer: {
