@@ -12,7 +12,13 @@ var debug = Debug('projnotes');
 var port  = normaLizePort(process.env.PORT || '3000')
 ~~~
 
-in ES6 there was a change of variables, these went from being **Var** to **Const** or **Let**, this change can be seen in figure 2.
+in ES6 there was a change of variables, these went from being **Var** to **Const** or **Let**, as it's shown in the following:
+
+~~~
+const debug = Debug('projnotes');
+
+const port  = normaLizePort(process.env.PORT || '3000')
+~~~
 
 ## Results
 Finally, it was possible to convert from ES5 to ES6, the changes that were made were interpolation, import, export, arrow functions and initialization of variables. In the following link you can see the change to ES6 in the project.
