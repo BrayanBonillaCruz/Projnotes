@@ -6,9 +6,11 @@ In the following work it is intended to achieve, through the knowledge acquired 
 ## Methods
 To start, the new ES6 updates began to be identified, with this the variables began to be updated since in ES5 the variables were initialized with **Var** as it's shown in the following:
 
-`var debug = Debug('projnotes');
+~~~
+var debug = Debug('projnotes');
 
-var port  = normaLizePort(process.env.PORT || '3000')`
+var port  = normaLizePort(process.env.PORT || '3000')
+~~~
 
 in ES6 there was a change of variables, these went from being **Var** to **Const** or **Let**, this change can be seen in figure 2.
 
