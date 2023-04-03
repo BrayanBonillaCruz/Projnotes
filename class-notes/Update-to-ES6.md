@@ -28,7 +28,7 @@ app.use(function(req, res, next){
 });
 ~~~
 
-In ES6 the functions are called **Arrow Functions**, this change can be seen below:
+In ES6 the functions are called **Arrow functions**, this change can be seen below:
 
 ~~~
 app.use((req, res, next) => {
