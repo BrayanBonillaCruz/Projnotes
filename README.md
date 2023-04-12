@@ -12,7 +12,7 @@ The projec is coded in ES6, as runtime enviroment it uses Node, for the database
 ## Project notes
 1. [Project creation](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Project-creation.md)
 
-2. [Repository creation]()
+2. [Repository creation](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Repository-creation.md)
 
 3. [Creating dedicated Backend directory]()
 
