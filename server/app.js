@@ -7,7 +7,7 @@ import path  from 'path';
 //const cookieParser = require('cookie-parser');
 import cookieParser from 'cookie-parser';
 //const logger = require('morgan');
-import logger from 'morgan';
+import morgan from 'morgan';
 
 //Importing subroutes
 //const indexRouter = require('./routes/index');
@@ -63,7 +63,7 @@ app.set('view engine', 'hbs');
 
 //Registrando middlewares
 //Log all received requests
-app.use(logger('dev'));
+app.use(morgan('dev'));
 // app.use((req, res, next) => {
 //  console.log("🍎 We have received a request");
 //  next();
@@ -93,7 +93,7 @@ app.use((req, res, next) => {
 });
 
 // error handler
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
