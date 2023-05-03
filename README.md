@@ -16,7 +16,7 @@ This project will be developed using ECMAScript 6 (ES6) and run on a Node.js run
 
 3. [Creating dedicated Backend directory](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Backend-directory.md)
 
-4. [Adding Babel]()
+4. [Adding Babel](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Adding-babel.md)
 
 5. [Updating to ES6](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Update-to-ES6.md)
 
