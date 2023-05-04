@@ -1,7 +1,7 @@
 # Adding babel
 
 ## Introducción
-En este apartado se observará la implementación e instalación de ***Babel*** dentro del proyecto, Babel 
+En este apartado se observará la implementación e instalación de ***Babel*** dentro del proyecto, ***Babel*** 
 permite observar modificaciones realizadas en el código ***JavaScript*** sin necesidad de detener el servidor local y volver a encenderlo, también permite transpilar versiones anteriores de ***JavaScript***.
 
 ## Metodos
