@@ -1,9 +1,10 @@
 # Adding babel
 
-## Introduction
-Para esta actividad, se creara un directorio específico para el ***Backend***, permitiendo obtener un mejor estructura del projecto haciendolo ver mas profecional. como obejetivo de este apartado se creará un directorio específico para el ***Backend***.
+## Introducción
+En este apartado se observará la implementación e instalación de ***Babel*** dentro del proyecto, Babel 
+permite observar modificaciones realizadas en el código ***JavaScript*** sin necesidad de detener el servidor local y volver a encenderlo, también permite transpilar versiones anteriores de ***JavaScript***.
 
-## Methods
+## Metodos
 El primer paso para agregar ***Babel*** al proyecto es instalar las siguientes dependencias:
 
 * @babel/cli
@@ -19,10 +20,20 @@ Al finalizar la instalación, dentro del archivo Package.Json se observan las de
 
 ![Figure 1](/public/img/AB.png)
 
-## Results
-Al finalizar los pasos anteriores se optiene un directorio específico para el ***Backend***, permitiendo obtener un mejor estructura del projecto haciendolo ver mas profecional. La estructura final de la carpeta ***Server*** se observa a continuación.
+Una vez instaladas las dependencias, dentro del archivo ***Package.Json*** se tienen que configurar los ***Scripts*** ***Start*** y ***Dev*** como se observa a continuación:
+
+~~~
+  "scripts": {
+    "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./bin/www"
+    "start": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes node ./server/bin/www",
+    "dev": "PORT=3000 APP_URL='http://localhost' DEBUG=projnotes babel-watch --watch ./server/views ./server/bin/www"
+  }
+~~~
+
+## Resultados
+Al editar el ***Script*** ***Dev*** con ***Babel***, permitirá observar modificaciones realizadas en el código ***JavaScript*** sin necesidad de detener el servidor local y volver a encenderlo. 
 
 
-## Discussions
-Es necesario recordar que al mover estas carpetas y archivos dentro de ***Server*** se deberán modificar las rutas dentro de algunos archivos, también es importante que al ejecutar el modo ***Dev*** es necesario modificar por lo anterior mencionado.
+## Discusión
+***Babel*** permite observar modificaciones realizadas en el código ***JavaScript*** sin necesidad de detener el servidor local y volver a encenderlo, también permite transpilar versiones anteriores de ***JavaScript***.
 
