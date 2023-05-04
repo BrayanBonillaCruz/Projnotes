@@ -30,6 +30,19 @@ Una vez instaladas las dependencias, dentro del archivo ***Package.Json*** se ti
   }
 ~~~
 
+En el directorio raíz se creará un archivo con el nombre .Babelrc, este archivo llevará la configuración que se muestra continuación: 
+
+~~~
+ "presets" : [
+        [
+            "@babel/preset-env",{
+                // Los targets son las plataformas donde se ejecutara el codigo final
+                "targets" : { "node" : "current"}
+            }
+        ]
+    ]
+~~~
+
 ## Resultados
 Al editar el ***Script*** ***Dev*** con ***Babel***, permitirá observar modificaciones realizadas en el código ***JavaScript*** sin necesidad de detener el servidor local y volver a encenderlo. 
 
