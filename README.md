@@ -2,7 +2,7 @@
 Project of fullstack web development subject
 
 ## About...
-**Author:* [Brayan Bonilla](https://google.com)
+**Author:** [Brayan Bonilla](https://google.com)
 
 ---
 
