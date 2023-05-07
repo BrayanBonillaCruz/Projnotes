@@ -22,6 +22,6 @@ This project will be developed using ECMAScript 6 (ES6) and run on a Node.js run
 
 6. [Build Script](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Build-script.md)
 
-7. [Babel plugins]()
+7. [Babel plugins](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Babel-plugins.md)
 
 8. [Adding a bundler]()
