@@ -24,4 +24,4 @@ This project will be developed using ECMAScript 6 (ES6) and run on a Node.js run
 
 7. [Babel plugins](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Babel-plugins.md)
 
-8. [Adding a bundler]()
+8. [Adding a bundler](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Adding-bundler.md)
