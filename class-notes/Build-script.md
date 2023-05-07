@@ -9,7 +9,7 @@ Dentro del archivo ***Package.Json***, en la sección de ***Scripts*** se  crea
 ![Figure 1](/public/img/BS.png)
 
 ## Resultados
-Al ejecutar el comando Npm run build, en el directorio rais se creara una carpeta con el nombre ***Dist*** como se observa continuación:
+Al ejecutar el comando ***Npm run build***, en el directorio rais se creara una carpeta con el nombre ***Dist*** como se observa continuación:
 
 ![Figure 2](/public/img/BS1.png)
 

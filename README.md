@@ -20,7 +20,7 @@ This project will be developed using ECMAScript 6 (ES6) and run on a Node.js run
 
 5. [Updating to ES6](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Update-to-ES6.md)
 
-6. [Build Script]()
+6. [Build Script](https://github.com/BrayanBonillaCruz/Projnotes/blob/main/class-notes/Build-script.md)
 
 7. [Babel plugins]()
 
