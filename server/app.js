@@ -9,14 +9,6 @@ import cookieParser from 'cookie-parser';
 // const logger = require('morgan');
 import morgan from 'morgan';
 
-// Importing subroutes
-// const indexRouter = require('./routes/index');
-import indexRouter from '@server/routes/index';
-// const usersRouter = require('./routes/users');
-import usersRouter from '@server/routes/users';
-// const apiRouter = require('./routes/api');
-import apiRouter from '@server/routes/api';
-
 // Settig webpack modules
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
@@ -30,6 +22,9 @@ import webpackConfig from '../webpack.dev.config';
 
 // Impornting winston logger
 import log from './config/winston';
+
+// Importando enrutador
+import router from './router';
 
 // Creando variable del directorio raiz
 // eslint-disable-next-line
@@ -96,10 +91,7 @@ app.use(cookieParser());
 // Set up the static files server
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Registering routes
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/api', apiRouter);
+router.addRoutes(app);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
