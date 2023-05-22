@@ -2,14 +2,14 @@
 // GET "/"
 // GET "/index"
 const home = (req, res) => {
-  const iconSet = ['⭐', '🤖', '🍉'];
-  const icon = iconSet[Math.floor(Math.random() * 3)];
-  res.render('index', { title: 'DWPCII-2023A', icon });
+  const iconSet = ['⭐', '🤖', '🍉', '👢', '🐸', '⏰', '⛑', '🎠', '🎃'];
+  const icon = iconSet[Math.floor(Math.random() * iconSet.length)];
+  res.render('home/homeView', { icon });
 };
 
 // Get "/index"
 const about = (req, res) => {
-  res.send('🪓 Under construction: get /about 🪓');
+  res.render('home/aboutView');
 };
 
 // Controlador Home
