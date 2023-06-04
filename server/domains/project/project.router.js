@@ -20,9 +20,6 @@ router.get('/', projectController.showDashboard);
 router.get('/add', projectController.add);
 
 // POST "/project/add"
-router.post('/add', projectController.addPost);
-
-// POST "/project/add"
 router.post(
   '/add',
   ValidateFactory({
