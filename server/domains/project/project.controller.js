@@ -58,10 +58,19 @@ const addPost = async (req, res) => {
   }
 };
 
+// GET "/project/edit/:id"
+const edit = (req, res) => {
+  // Extrayendo el id por medio de los parametros de url
+  const { id } = req.params;
+  // Se manda a renderizar la vista de edición
+  res.render('project/editView', { id });
+};
+
 // Controlador user
 export default {
   // Action methods
   showDashboard,
   add,
   addPost,
+  edit,
 };
