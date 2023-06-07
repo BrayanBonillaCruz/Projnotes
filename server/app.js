@@ -2,6 +2,8 @@
 import createError from 'http-errors';
 // const express = require('express');
 import express from 'express';
+// Enable post and delete verbs
+import methodOverride from 'method-override';
 // const path = require('path');
 import path from 'path';
 // const cookieParser = require('cookie-parser');
@@ -85,6 +87,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Parse client cookies info json
 app.use(cookieParser());
+// Enable post and delete verbs
+app.use(methodOverride('_method'));
 // Set up the static files server
 app.use(express.static(path.join(__dirname, '../public')));
 
