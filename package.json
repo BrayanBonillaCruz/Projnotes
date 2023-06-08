@@ -52,7 +52,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.7.5",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   }
